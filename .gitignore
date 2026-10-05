@@ -1,0 +1,14 @@
+# Python and Jupyter-generated files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local Conda environments
+.conda/
+.venv/
+
+# Generated analysis outputs and data
+results/
+*.h5ad
+*.h5
+*.loom

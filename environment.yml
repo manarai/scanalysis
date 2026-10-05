@@ -1,0 +1,41 @@
+# Scanpy preprocessing and Leiden clustering environment
+#
+# Create:   mamba env create -f environment.yml
+# Or:       conda env create -f environment.yml
+# Activate: conda activate scanalysis
+#
+# Scope: 10x/AnnData loading, QC, filtering, optional doublet scoring,
+# normalization, HVGs, PCA, neighbor graphs, Leiden clustering, UMAP, and
+# standard plots. Advanced deep-learning/integration packages are omitted.
+name: scanalysis
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # Core single-cell RNA-seq analysis
+  - python=3.12
+  - scanpy=1.12.4
+  - anndata=0.13.4
+  - numpy
+  - pandas
+  - scipy
+  - h5py
+
+  # Quality control and preprocessing
+  - scrublet=0.2.3
+  - scikit-misc        # Enables Scanpy's Seurat v3 HVG option
+  - scikit-learn       # PCA and related preprocessing tools
+
+  # Neighbor graph, Leiden clustering, and UMAP
+  - python-igraph
+  - leidenalg
+  - pynndescent
+  - umap-learn
+
+  # Plotting and notebooks
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - ipykernel
+  - nbformat
+  - pip
