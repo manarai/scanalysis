@@ -11,11 +11,15 @@ A student-friendly **Scanpy** Conda environment for basic single-cell RNA-seq pr
 | QC, filtering, normalization, log transform, and HVGs | Scanpy, scikit-misc |
 | Optional doublet scores | Scrublet |
 | PCA and nearest-neighbor graph | Scanpy, scikit-learn, pynndescent |
-| Leiden graph clustering | python-igraph, leidenalg |
+| Louvain and Leiden graph clustering | python-igraph and leidenalg; Scanpy uses the igraph implementation for Louvain. |
 | UMAP and diagnostic plots | umap-learn, matplotlib, seaborn |
 | Interactive notebooks | JupyterLab, ipykernel |
 
 > **Keep raw counts unchanged.** Use raw UMI counts for quality-control metrics and Scrublet. Derive normalized/log-transformed data separately. Treat clusters as exploratory results that require biological and technical validation.
+
+## Studio 1 notebook
+
+Run the commented [Studio 1 preprocessing-to-clustering notebook](notebooks/studio1_preprocessing_to_clustering.ipynb) after completing the Quick Start below. It supports one or two Cell Ranger `.h5` files or `.h5ad` objects and intentionally performs doublet scoring/review before normalization, PCA, UMAP, and clustering.
 
 ## Quick start
 
