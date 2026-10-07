@@ -19,7 +19,7 @@ A student-friendly **Scanpy** Conda environment for basic single-cell RNA-seq pr
 
 ## Studio 1 notebook
 
-Run the commented [Studio 1 preprocessing-to-clustering notebook](notebooks/studio1_preprocessing_to_clustering.ipynb) after completing the Quick Start below. It supports one or two Cell Ranger `.h5` files or `.h5ad` objects and intentionally performs doublet scoring/review before normalization, PCA, UMAP, and clustering.
+Run the commented [Studio 1 preprocessing-to-clustering notebook](notebooks/studio1_preprocessing_to_clustering.ipynb) after completing the Quick Start below. It supports one or two Cell Ranger `.h5` files or `.h5ad` objects, uses one small teaching action per code cell, and places each QC cutoff directly after the diagnostic plot it requires. It intentionally performs doublet scoring/review before normalization, PCA, UMAP, and clustering.
 
 ## Quick start
 
